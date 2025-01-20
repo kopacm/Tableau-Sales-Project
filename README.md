@@ -422,4 +422,11 @@ My approach and notes:
   
 ## **What I learned**
 
-- Framework which i can apply for 
+- Framework which I can apply for next project I will do in Tableau
+- Choose Charts and Draw Mockups before even starting with visualization
+- Creating parameter 
+- Using calculated fields and make it dynamic by using parameter
+- Functions Window_max, Window_min, WINDOW_AVG, {FIXED}
+- Minimalism of Chart Axis titles 
+- Creating Container Structure first and then Put All Charts in so it's easier to modify
+- Add/Hide Button for Filter 
