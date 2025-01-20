@@ -19,12 +19,13 @@
 
 ## **Project Overview**
 
-This user story outlines the specifications for building two dashboards using tableau to help stakeholders, including sales managers and executives to analyze sales performance and customers.
+Building two dashboards based on given specifications using tableau to help stakeholders, including sales managers and executives to analyze sales performance and customers.
+
 ## **Objective**
 
 Learn Dashboard Design process in Tableau by using specific framework. 
 $${\color{orange}**This project was only created for design purpose not for presenting project**}$$
-<code style="color : lightskyblue">**This project was only created for design purpose not for presenting project**</code> 
+<code style="color : lightskyblue">**This project was only created for purpose of designing dashboard not for presenting finding**</code> 
 
 ## **User Requirements**
 
