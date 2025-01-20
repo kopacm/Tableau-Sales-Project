@@ -179,173 +179,167 @@ KPI Overview
 
 ### STEP 2 - Build Data Source
 
-#### Connect Data
+<details>
+<summary><h4>Connect Data</h4></summary>
+<p>Opened new file and connect text file .csv</p>
+</details>
 
-Opened new file and connect text file .csv
-#### Create Data Model
+<details>
+<summary><h4>Create Data Model</h4></summary>
+<p>Always start with the FACT table to build the data model. FACT table is the table where there are ID, dates, measures; in my case, it is orders.csv. The rest are dimensions.</p>
+<img src="/images/20250114144836.png" alt="Data Model">
+<p>I need to make sure that connections are right; in this case, Order and Products tables are connected with Product ID.</p>
+</details>
 
-Always start with the FACT table to build the data model
-FACT table is table where are ID, dates, measures in my case is it orders.csv 
-rest are dimensions 
+<details>
+<summary><h4>Rename Fields & Tables</h4></summary>
+<p>In my case, I changed Location.csv to Location so it's clean.</p>
+</details>
 
-![image](/images/20250114144836.png)
-I need to make sure that connection are right in this case Order and Products tables are connected with Product ID 
+<details>
+<summary><h4>Check Data Types</h4></summary>
+<p>Incorrect data types can result in inaccurate visualizations. Made sure that dates and measures in FACTS are not String data type.</p>
+</details>
 
-
-#### Rename Fields & Tables 
-
-In my case in changed Location.csv to Location so it's clean.
-
-#### Check Data Types
-
-Incorrect dat types can result in inaccurate visualizations 
-Made sure that dates and measures in FACTS are not String data type 
-#### Understand Data
-
-Understanding the data is important to understand the business and build correct visualization 
+<details>
+<summary><h4>Understand Data</h4></summary>
+<p>Understanding the data is important to understand the business and build correct visualization.</p>
+</details>
 
 ### STEP 3 - Build Charts
 
-#### If we don't have all the data we need to - Create calculated fields & Test them
+<details>
+<summary><h4>Create Calculated Fields & Test Them</h4></summary>
 
-- Display a summary of total sales, profits and quantity for the current year (CY Sales) and the previous year (PY Sales)
-- The Dashboard should allow users to check historical data by offering them the flexibility to select any desired year
-Sales for year 2023:
- New created field CY Sales, PY Sales:
+<p>Display a summary of total sales, profits and quantity for the current year (CY Sales) and the previous year (PY Sales)</p>
+<p>The Dashboard should allow users to check historical data by offering them the flexibility to select any desired year</p>
 
-![image](/images/20250114151226.png)
+<p>Sales for year 2023:</p>
+<p>New created field CY Sales, PY Sales:</p>
 
+<img src="/images/20250114151226.png" alt="CY Sales">
 
-![image](/images/20250114151330.png)
+<img src="/images/20250114151330.png" alt="PY Sales">
 
-For dynamic purpose I can use parameters in Tableau in order to be able to use it I needed to have years of order years in field which I named Order date (Year) 
-![image](/images/20250114151138.png)
-Created parameter "Select Year" 
-![image](/images/20250114152255.png)
+<p>For dynamic purpose, I can use parameters in Tableau. In order to use it, I needed to have years of order years in a field which I named Order date (Year)</p>
+<img src="/images/20250114151138.png" alt="Order Date (Year)">
+<p>Created parameter "Select Year"</p>
+<img src="/images/20250114152255.png" alt="Select Year Parameter">
 
-![image](/images/20250114152454.png)
+<img src="/images/20250114152454.png" alt="Select Year Parameter Configuration">
 
-Now in order to make it dynamic I need to change fields CY Sales and PY Sales 
-```
+<p>Now, in order to make it dynamic, I need to change fields CY Sales and PY Sales</p>
+<pre>
+<code>
 IF YEAR([Order Date])= 2023 THEN [Sales]
 END
-```
-to 
-```
+</code>
+</pre>
+<p>to</p>
+<pre>
+<code>
 IF YEAR([Order Date])= [Select Year] THEN [Sales]
 END
-```
-And PY Pales
-to 
-```
+</code>
+</pre>
+<p>And PY Sales to</p>
+<pre>
+<code>
 IF YEAR([Order Date])= [Select Year]-1 THEN [Sales]
 END
-```
+</code>
+</pre>
+</details>
 
-#### Build Chart
+<details>
+<summary><h4>Build Chart</h4></summary>
 
-##### Created BAN 
+<h5>Created BAN</h5>
+<img src="/images/20250114153846.png" alt="BAN Chart">
+<p>Adjust formatting</p>
+<img src="/images/20250114154443.png" alt="BAN Chart Formatting">
 
-![image](/images/20250114153846.png)
-Adjust formatting 
-![image](/images/20250114154443.png)
+<p>In order to create a clear indicator, I used easy custom formatting ▲ 0.00%; ▼ -0.00%; which will show ▲ in a case of positive number and ▼ negative number</p>
+<img src="/images/20250114154613.png" alt="Custom Formatting">
 
-In order to create clear indicator I used easy custom formatting ▲ 0.00%; ▼ -0.00%; which will show  ▲  in a case of positive number and ▼ negative number
+<h5>Sparkline</h5>
+<p>To be able to compare two graphs on each other, I dragged PY Sales to CY Sales on Y-Axis</p>
+<img src="/images/20250114155648.png" alt="Sparkline">
 
-![image](/images/20250114154613.png)
-
-Sparkline 
-
-to be able to compare two graph on each other I dragged PY Sales to CY Sales on Y-Axis 
-
-![image](/images/20250114155648.png)
-
-
-Next I needed to highlight lowest and highest value for that I needed new calculated field 
-Min/Max Sales
-```
+<p>Next, I needed to highlight the lowest and highest value. For that, I needed a new calculated field Min/Max Sales</p>
+<pre>
+<code>
 IF SUM([CY Sales]) = WINDOW_MAX(SUM([CY Sales])) //WINDOW_MAX - max value in current window
 THEN SUM([CY Sales])
 ELSEIF SUM([CY Sales]) = WINDOW_MIN(SUM([CY Sales]))
 THEN SUM([CY Sales])
 END
-```
+</code>
+</pre>
 
-Then I used this new calculated field in a row and to be able to show it in one graph I had to chose Dual Axis 
-![image](/images/20250115095915.png)
+<p>Then I used this new calculated field in a row and to be able to show it in one graph, I had to choose Dual Axis</p>
+<img src="/images/20250115095915.png" alt="Dual Axis">
 
-I fixed this range which was caused by continuous graph by changing SUM values to "{}" brackets 
+<p>I fixed this range which was caused by continuous graph by changing SUM values to "{}" brackets</p>
+<img src="/images/20250115100641.png" alt="Fixed Range">
 
-![image](/images/20250115100641.png)
+<img src="/images/20250115100930.png" alt="Fixed Range">
 
-![image](/images/20250115100930.png)
+<h5>Format</h5>
+<p>I removed all lines and grids and cleaned up Axis and Headers because minimalism is the key. Excessive info on the dashboard can distract users from the important data</p>
+<p>I left only X-Axis where instead of the numbers of the month, I made sure it's obvious what values are there even without Axis Title by showing months abbreviation</p>
+<img src="/images/20250115101914.png" alt="Minimalist Axis">
 
- Format 
-  I Removed all Lines and grids  and cleaned up Axis and Headers because Minimalism is the key. Excessive Info on dashboard can distract users from the important data 
-I left only X-Axis where instead of the numbers of month I made sure it's obvious what values are there even without Axis Title by showing moths abbreviation
-![image](/images/20250115101914.png)
+<p>Instead of showing all months on Axis</p>
+<img src="/images/20250115102208.png" alt="All Months Axis">
+<p>I made it minimalist by showing only Jan and Dec so everyone who will look at it can see that it's from Jan to Dec</p>
+<img src="/images/20250115103050.png" alt="Minimalist Axis Jan-Dec">
+<img src="/images/20250115103208.png" alt="Minimalist Axis Jan-Dec">
 
-Instead of showing all months on Axis 
-![image](/images/20250115102208.png)
-I made it minimalist by showing only Jan and Dec so everyone who will look at it can see that it's from Jan to Dec. 
-![image](/images/20250115103050.png)
-![image](/images/20250115103208.png)
+<h5>Coloring</h5>
+<p>I used colors mentioned above: dark gray for CY Sales and light gray for PY Sales. To change the color of MIN/MAX Sales, I dragged "Min/Max Sales" from Rows by holding Ctrl on Colour</p>
+<p>For MAX #1da2d0 and #ff5500 for MIN</p>
 
+<h5>Tooltips</h5>
+<p>Info showed while hovering on graph line</p>
+<p>I created a new calculated field Current Year and Previous year based on [Select Year]</p>
+<img src="/images/20250115112033.png" alt="Calculated Field">
+<p>I formatted Tooltip so it shows clearly what I want to show</p>
+<img src="/images/20250115112926.png" alt="Formatted Tooltip">
 
-#### Coloring
+<h5>Create Bar Chart</h5>
+<p>**When you merge two charts together, don't forget to synchronize Axis!**</p>
+<img src="/images/20250116093006.png" alt="Synchronized Axis">
 
-I used colors mentioned above dark gray for CY Sales and light gray for PY Sales
-To change color of MIN/MAX Sales I dragged "Min/Max Sales" from Rows by holding Ctrl on Colour
+<p>To be able to easily identify in which subcategory KPI was worse than the previous year, I added an icon</p>
+<img src="/images/20250116094056.png" alt="Icon">
+<p>For that, I created a calculated field which compares CY Sales KPI with PY Sales result:</p>
+<img src="/images/20250116094614.png" alt="Calculated Field">
 
-For MAX #1da2d0 and #ff5500 for MIN 
+<p>For better overview, I sorted subcategories based on CY sales</p>
+<img src="/images/20250116094857.png" alt="Sorted Subcategories">
 
-Tooltips 
-Info showed while hovering on graph line
+<h5>Weekly Trends for Sales & Profit</h5>
+<p>Present weekly sales and profit data for the current year.</p>
+<p>Display the average weekly values</p>
+<p>Highlight weeks that are above and below the average to draw attention to sales & profit performance.</p>
 
-I create new calculated field Current Year and Previous year based on [Select Year]
-![image](/images/20250115112033.png)
-I formatted Tooltip so it showing clearly what I what to show
-![image](/images/20250115112926.png)
+<h5>Line Chart</h5>
+<p>Weekly sales and profit data graph:</p>
+<img src="/images/20250116100357.png" alt="Weekly Sales and Profit Data">
+<p>To display average values, I added a reference line</p>
+<img src="/images/20250116100555.png" alt="Reference Line">
 
-
-
-Create Bar Chart
-
-
-**When you merging two charts together don't forget to synchronize Axis !** 
-![image](/images/20250116093006.png)
-
-To be able easily identify in which subcategory KPI was worst than previous year I added icon 
-![image](/images/20250116094056.png)
-for that I created calculated field which compares CY Sales KPI with PY Sales result:
-![image](/images/20250116094614.png)
-
-For better overview I sorted subcategories based on CY sales
-![image](/images/20250116094857.png)
-
-#### Weekly Trends for Sales & Profit
-
- – Present weekly sales and profit data for the current year.
-
- – Display the average weekly values
-
- – Highlight weeks that are above and below the average to draw attention to sales & profit performance.
-
-LINE Chart 
-
-
-Weekly sales and profit data graph:
-![image](/images/20250116100357.png)
-To display average values I added reference line   
-![image](/images/20250116100555.png)
-
-For different coloring above and under I created calculated field with function WINDOW_AVG instead of AVG for reason that I only needed to reference to this year not all of them
-```
+<p>For different coloring above and under, I created a calculated field with function WINDOW_AVG instead of AVG for the reason that I only needed to reference to this year, not all of them</p>
+<pre>
+<code>
 IF SUM([CY Sales]) > WINDOW_AVG(SUM([CY Sales])) THEN 'Above'
 ELSE 'Below'
 END
-```
-![image](/images/20250116101859.png)
+</code>
+</pre>
+<img src="/images/20250116101859.png" alt="Calculated Field">
+</details>
 
 ### STEP 4 - Build Dashboard
 
