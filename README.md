@@ -145,12 +145,15 @@ Allow users to filter data by product information like category and subcategory 
 <details>
     <summary>Collect Requirements</summary>
 
-    - [Tableau User Story Requirements](#user-requirements)
+    #### Collect Requirements 
 
+    - [Tableau User Story Requirements](#user-requirements)
 </details>
 
 <details>
     <summary>Choose Right Chart</summary>
+
+    #### Choose Right Chart
 
     I analyzed requirements and chose what chart I will use  
 
@@ -163,29 +166,28 @@ Allow users to filter data by product information like category and subcategory 
     ```
 
     > CHART: Numeric chart, BANS chart good for showing whole numbers
-
 </details>
 
 <details>
     <summary>Draw Mockups</summary>
 
+    #### Draw Mockups
+
     ![image](/images/20250120121719.png)
     ![image](/images/20250120121745.png)
-
 </details>
 
 <details>
     <summary>Choose Colors</summary>
 
-    **Choosing colors** at **start** of a project is important. Early selection of colors helps maintain **consistency** through out the project
+    #### Choose Colors
+
+    **Choosing colors** at **start** of a project is important. Early selection of colors helps maintain **consistency** throughout the project
 
     **Maximum of 4 Colors**
     - 2 Basic Colors example: White background - #303030 dark gray & #b3b3b3 light gray 
     - 2 Custom Colors: User preferences/Logo color in this case #ff5500 orange #1da2d0 light blue
-
 </details>
-
-### STEP 2 - Build Data Source
 
 #### Connect Data
 
