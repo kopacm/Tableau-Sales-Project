@@ -32,17 +32,14 @@
 - [Final Dashboard Design](#final-dashboard-design)
 - [What have I learned](#what-have-i-learned)
 
-
-  
-
 ## **Project Overview**
 
 This user story outlines the specifications for building two dashboards using tableau to help stakeholders, including sales managers and executives to analyze sales performance and customers.
 ## **Objective**
 
 Learn Dashboard Design process in Tableau by using specific framework. 
-<font color="blue">**This project was only created for design purpose not for presenting project**</font>
-  
+<code style="color : lightskyblue">**This project was only created for design purpose not for presenting project**</code> 
+
 ## **User Requirements**
 
 ### Sales Dashboard | Requirements
