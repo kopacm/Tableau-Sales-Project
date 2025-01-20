@@ -142,36 +142,48 @@ Allow users to filter data by product information like category and subcategory 
 
 ### STEP 1 - Analyze Requirements
 
-#### Collect Requirements 
+<details>
+    <summary>Collect Requirements</summary>
 
-- [Tableau User Story Requirements](#user-requirements)
+    - [Tableau User Story Requirements](#user-requirements)
 
-#### Choose Right Chart
+</details>
 
-I analyzed requirements and chose what chart i will use  
+<details>
+    <summary>Choose Right Chart</summary>
 
-Example: 
+    I analyzed requirements and chose what chart I will use  
 
-```
-KPI Overview
+    Example: 
 
-- Display a summary of total sales, profits and quantity for the current year and the previous year
-```
+    ```
+    KPI Overview
 
-> CHART: Numeric chart, BANS chart good for showing whole numbers
+    - Display a summary of total sales, profits and quantity for the current year and the previous year
+    ```
 
-#### Draw Mockups
+    > CHART: Numeric chart, BANS chart good for showing whole numbers
 
-![image](/images/20250120121719.png)
-![image](/images/20250120121745.png)
+</details>
 
-#### Choose Colors
+<details>
+    <summary>Draw Mockups</summary>
 
-**Choosing colors** at **start** of a project is important. Early selection of colors helps maintain **consistency** through out the project
+    ![image](/images/20250120121719.png)
+    ![image](/images/20250120121745.png)
 
-**Maximum of 4 Color**
-- 2 Basic Colors example: White background - #303030 dark gray & #b3b3b3 light gray 
-- 2 Custom Colors:  User preferences/Logo color in this case #ff5500 orange #1da2d0 light blue
+</details>
+
+<details>
+    <summary>Choose Colors</summary>
+
+    **Choosing colors** at **start** of a project is important. Early selection of colors helps maintain **consistency** through out the project
+
+    **Maximum of 4 Colors**
+    - 2 Basic Colors example: White background - #303030 dark gray & #b3b3b3 light gray 
+    - 2 Custom Colors: User preferences/Logo color in this case #ff5500 orange #1da2d0 light blue
+
+</details>
 
 ### STEP 2 - Build Data Source
 
