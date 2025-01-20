@@ -145,20 +145,20 @@ The purpose of sales dashboard is to present an overview of the sales metrics an
 	- If we don't have all the data we need to create calculated fields & Test
 	- Build Chart
 	- Format 
-		  - Remove Lines and grids
-		  - Clean up Axis and Headers
-		  - Coloring
-		  - Tooltips
+	  - Remove Lines and grids
+	  - Clean up Axis and Headers
+	  - Coloring
+	  - Tooltips
 4. STEP 4 - Build Dashboard
 	- Draw Mockup for Containers
 	- Create Container Structure
 	- Put All Charts Together
 	- Format
-		  - Distribute Object Evenly
-		  - Format Colors, size... etc
-		  - Fit "Entire View"
-		  - Add Legends
-		  - Add Spaces (inner/outer Padding)
+	  - Distribute Object Evenly
+	  - Format Colors, size... etc
+	  - Fit "Entire View"
+	  - Add Legends
+	  - Add Spaces (inner/outer Padding)
 	- Add Filters & Dynamic
 	- Add Icons
 
