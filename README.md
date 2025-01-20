@@ -149,7 +149,6 @@ The purpose of sales dashboard is to present an overview of the sales metrics an
 ### STEP 1 - Analyze Requirements
 
 My approach and notes:
-
 <details>
 <summary><h4>Collect Requirements</h4></summary>
 <ul>
@@ -188,7 +187,6 @@ KPI Overview
 ### STEP 2 - Build Data Source
 
 My approach and notes:
-
 <details>
 <summary><h4>Connect Data</h4></summary>
 <p>Opened new file and connect text file .csv</p>
@@ -219,7 +217,6 @@ My approach and notes:
 ### STEP 3 - Build Charts
 
 My approach and notes:
-
 <details>
 <summary><h4>Create Calculated Fields & Test Them</h4></summary>
 
@@ -356,7 +353,6 @@ END
 ### STEP 4 - Build Dashboard
 
 My approach and notes:
-
 <details>
 <summary><h4>Create Container Structure</h4></summary>
 <p>I usually use a fixed size of Dashboard 1200x800 px. I'm starting with floating containers before tiled ones. By holding SHIFT and dragging it inside, I created a floating container.</p>
