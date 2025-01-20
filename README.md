@@ -143,7 +143,8 @@ Allow users to filter data by product information like category and subcategory 
 ### STEP 1 - Analyze Requirements
 
 #### Collect Requirements 
-[[Tableau User Story Requirements]]
+
+- [Tableau User Story Requirements](#user-requirements)
 
 #### Choose Right Chart
 
