@@ -143,51 +143,41 @@ Allow users to filter data by product information like category and subcategory 
 ### STEP 1 - Analyze Requirements
 
 <details>
-    <summary>Collect Requirements</summary>
-
-    #### Collect Requirements 
-
-    - [Tableau User Story Requirements](#user-requirements)
+<summary><h4>Collect Requirements</h4></summary>
+<ul>
+    <li><a href="#user-requirements">Tableau User Story Requirements</a></li>
+</ul>
 </details>
 
 <details>
-    <summary>Choose Right Chart</summary>
+<summary><h4>Choose Right Chart</h4></summary>
+<p>I analyzed requirements and chose what chart I will use</p>
+<p>Example:</p>
+<pre>
+KPI Overview
 
-    #### Choose Right Chart
-
-    I analyzed requirements and chose what chart I will use  
-
-    Example: 
-
-    ```
-    KPI Overview
-
-    - Display a summary of total sales, profits and quantity for the current year and the previous year
-    ```
-
-    > CHART: Numeric chart, BANS chart good for showing whole numbers
+- Display a summary of total sales, profits and quantity for the current year and the previous year
+</pre>
+<blockquote>CHART: Numeric chart, BANS chart good for showing whole numbers</blockquote>
 </details>
 
 <details>
-    <summary>Draw Mockups</summary>
-
-    #### Draw Mockups
-
-    ![image](/images/20250120121719.png)
-    ![image](/images/20250120121745.png)
+<summary><h4>Draw Mockups</h4></summary>
+<img src="/images/20250120121719.png" alt="Mockup 1">
+<img src="/images/20250120121745.png" alt="Mockup 2">
 </details>
 
 <details>
-    <summary>Choose Colors</summary>
-
-    #### Choose Colors
-
-    **Choosing colors** at **start** of a project is important. Early selection of colors helps maintain **consistency** throughout the project
-
-    **Maximum of 4 Colors**
-    - 2 Basic Colors example: White background - #303030 dark gray & #b3b3b3 light gray 
-    - 2 Custom Colors: User preferences/Logo color in this case #ff5500 orange #1da2d0 light blue
+<summary><h4>Choose Colors</h4></summary>
+<p><strong>Choosing colors</strong> at <strong>start</strong> of a project is important. Early selection of colors helps maintain <strong>consistency</strong> throughout the project</p>
+<p><strong>Maximum of 4 Colors</strong></p>
+<ul>
+    <li>2 Basic Colors example: White background - #303030 dark gray & #b3b3b3 light gray</li>
+    <li>2 Custom Colors: User preferences/Logo color in this case #ff5500 orange #1da2d0 light blue</li>
+</ul>
 </details>
+
+### STEP 2 - Build Data Source
 
 #### Connect Data
 
