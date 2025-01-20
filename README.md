@@ -344,43 +344,37 @@ END
 ### STEP 4 - Build Dashboard
 
 
-- Draw Mockup for Containers
-- Create Container Structure
-- Put All Charts Together
-- Format
-  - Distribute Object Evenly
-  - Format Colors, size... etc
-  - Fit "Entire View"
-  - Add Legends
-  - Add Spaces (inner/outer Padding)
-- Add Filters & Dynamic
-- Add Icons
+<details>
+<summary><h4>Create Container Structure</h4></summary>
+<p>I usually use a fixed size of Dashboard 1200x800 px. I'm starting with floating containers before tiled ones. By holding SHIFT and dragging it inside, I created a floating container.</p>
+<img src="/images/20250116104420.png" alt="Floating Container">
 
+<p>Then I created a tiled main vertical container with horizontal containers in it. I used blank fields to see my structure first.</p>
+<img src="/images/20250116110938.png" alt="Tiled Container Structure">
+</details>
 
-Create Container Structure
-I usually use fixed size of Dashboard 1200x800 px 
-I'm starting with floating containers before tiled ones. By holding SHIFT and dragging it inside I created floating container 
-![image](/images/20250116104420.png)
+<details>
+<summary><h4>Put All Charts Together</h4></summary>
+<img src="/images/20250116111357.png" alt="All Charts Together">
+</details>
 
-Then I created tiled main vertical container with horizontal containers in it. I used blank fields to see my structure first 
-![image](/images/20250116110938.png)
+<details>
+<summary><h4>Format</h4></summary>
+<p>Distribute Object Evenly</p>
+<img src="/images/20250116111334.png" alt="Distribute Object Evenly">
 
-Put All Charts Together
-![image](/images/20250116111357.png)
+<p>Outer padding 10, Inner padding 10</p>
+</details>
 
-Format
+<details>
+<summary><h4>Filter</h4></summary>
+<p>Filter Apply to all using this Data Source and then select in each graph which filter you want to be shown.</p>
+<img src="/images/20250116121851.png" alt="Filter">
 
-Distribute Object Evenly
-![image](/images/20250116111334.png)
-
-Outer padding 10 Inner padding 10
-
-Filter Apply to all using this Data Source and then select in each graph which filter you want to be shown
-![image](/images/20250116121851.png)
-
-Number of Orders per Customer
-`{FIXED [CY Customers Nr.]: COUNTD([CY Orders])}`
-`{FIXED [CY Customers Nr.]:` all the customers who ordered this year then the aggregation `COUNTD([CY Orders])` number of orders
+<p>Number of Orders per Customer</p>
+<pre><code>{FIXED [CY Customers Nr.]: COUNTD([CY Orders])}</code></pre>
+<p><code>{FIXED [CY Customers Nr.]:</code> all the customers who ordered this year then the aggregation <code>COUNTD([CY Orders])</code> number of orders</p>
+</details>
 
 ## **Final Dashboard Design**
 
