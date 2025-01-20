@@ -107,7 +107,7 @@ Allow users to filter data by product information like category and subcategory 
 ## **Procedure**
 
 
-![image](images/20250120121612.png)
+![image](/images/20250120121612.png)
 1. STEP 1 - Analyse Requirements
 	- Collect Requirements
 	- Choose Right Chart
