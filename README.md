@@ -162,8 +162,8 @@ KPI Overview
 
 #### Draw Mockups
 
-![[Pasted image 20250120121719.png]]
-![[Pasted image 20250120121745.png]]
+![image](/images/20250120121719.png)
+![image](/images/20250120121745.png)
 
 #### Choose Colors
 
