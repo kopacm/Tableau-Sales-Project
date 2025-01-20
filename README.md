@@ -23,6 +23,7 @@ This user story outlines the specifications for building two dashboards using ta
 ## **Objective**
 
 Learn Dashboard Design process in Tableau by using specific framework. 
+$${\color{orange}**This project was only created for design purpose not for presenting project**}$$
 <code style="color : lightskyblue">**This project was only created for design purpose not for presenting project**</code> 
 
 ## **User Requirements**
