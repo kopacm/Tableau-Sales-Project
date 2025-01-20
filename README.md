@@ -50,10 +50,9 @@ Learn Dashboard Design process in Tableau by using specific framework. <font col
 
 The purpose of sales dashboard is to present an overview of the sales metrics and trends in order to analyze year-over-year sales performance and understand sales trends.
 
-#### Key Requirements
 
 <details>
-<summary><h4>Sales Dashboard | Requirements</h4></summary>
+<summary><h4>Key Requirements</h4></summary>
 
 <h5>KPI Overview</h5>
 <p>Display a summary of total sales, profits and quantity for the current year and the previous year.</p>
@@ -76,13 +75,16 @@ The purpose of sales dashboard is to present an overview of the sales metrics an
     <li>Display the average weekly values.</li>
     <li>Highlight weeks that are above and below the average to draw attention to sales & profit performance.</li>
 </ul>
+</details>
+
 
 <h3>Customer Dashboard | Requirements</h3>
 
 <h4>Dashboard Purpose</h4>
 <p>The customer dashboard aims to provide an overview of customer data, trends and behaviors. It will help marketing teams and management to understand customer segments and improve customer satisfaction.</p>
 
-<h4>Key Requirements</h4>
+<details>
+<summary><h4>Key Requirements</h4></summary>
 
 <h5>KPI Overview</h5>
 <p>Display a summary of total number of customers, total sales per customer and total number of orders for the current year and the previous year.</p>
