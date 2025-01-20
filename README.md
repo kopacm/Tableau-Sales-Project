@@ -7,8 +7,8 @@
 ## 📚 Table of Contents
 
 - [Project Overview](#project-overview)
-- [User Requirements](#user-requirements)
 - [Objective](#objective)
+- [User Requirements](#user-requirements)
 - [Procedure](#procedure)
     - [STEP 1 - Analyze Requirements](#step-1---analyze-requirements)
         - [Collect Requirements](#collect-requirements)
@@ -40,7 +40,7 @@
 This user story outlines the specifications for building two dashboards using tableau to help stakeholders, including sales managers and executives to analyze sales performance and customers.
 ## **Objective**
 
-  Learn Dashboard Design process in Tableau by using specific framework. **This project was only created for design purpose not for presenting project**
+Learn Dashboard Design process in Tableau by using specific framework. **_This project was only created for design purpose not for presenting project_**
   
 ## **User Requirements**
 
@@ -52,72 +52,69 @@ The purpose of sales dashboard is to present an overview of the sales metrics an
 
 #### Key Requirements
 
-##### KPI Overview
+<details><h4>Key Requirements</h4>
+<summary><h4>Sales Dashboard | Requirements</h4></summary>
 
-Display a summary of total sales, profits and quantity for the current year and the previous year.
+<h5>KPI Overview</h5>
+<p>Display a summary of total sales, profits and quantity for the current year and the previous year.</p>
 
-##### Sales Trends
+<h5>Sales Trends</h5>
+<ul>
+    <li>Present the data for each KPI on a monthly basis for both the current year and the previous year.</li>
+    <li>Identify months with highest and lowest sales and make them easy to recognize.</li>
+</ul>
 
- – Present the data for each KPI on a monthly basis for both the current year and the previous year.
+<h5>Product Subcategory Comparison</h5>
+<ul>
+    <li>Compare sales performance by different product subcategories for the current year and the previous year.</li>
+    <li>Include a comparison of sales with profit.</li>
+</ul>
 
- – Identify months with highest and lowest sales and make them easy to recognize.
+<h5>Weekly Trends for Sales & Profit</h5>
+<ul>
+    <li>Present weekly sales and profit data for the current year.</li>
+    <li>Display the average weekly values.</li>
+    <li>Highlight weeks that are above and below the average to draw attention to sales & profit performance.</li>
+</ul>
 
-##### Product Subcategory Comparison
+<h3>Customer Dashboard | Requirements</h3>
 
- – Compare sales performance by different product subcategories for the current year and the previous year.
+<h4>Dashboard Purpose</h4>
+<p>The customer dashboard aims to provide an overview of customer data, trends and behaviors. It will help marketing teams and management to understand customer segments and improve customer satisfaction.</p>
 
- – Include a comparison of sales with profit.
+<h4>Key Requirements</h4>
 
-##### Weekly Trends for Sales & Profit
+<h5>KPI Overview</h5>
+<p>Display a summary of total number of customers, total sales per customer and total number of orders for the current year and the previous year.</p>
 
- – Present weekly sales and profit data for the current year.
+<h5>Customer Trends</h5>
+<ul>
+    <li>Present the data for each KPI on a monthly basis for both the current year and the previous year.</li>
+    <li>Identify months with highest and lowest sales and make them easy to recognize.</li>
+</ul>
 
- – Display the average weekly values.
+<h5>Customer Distribution by Number of Orders</h5>
+<p>Represent the distribution of customers based on the number of orders they have placed to provide insights into customer behavior, loyalty and engagement.</p>
 
- – Highlight weeks that are above and below the average to draw attention to sales & profit performance.
+<h5>Top 10 Customers By Profit</h5>
+<ul>
+    <li>Present the top 10 customers who have generated the highest profits for the company.</li>
+    <li>Show additional information like rank, number of orders, current sales, current profit and the last order date.</li>
+</ul>
 
-### Customer Dashboard | Requirements
+<h3>Design & Interactivity Requirements</h3>
 
-#### Dashboard Purpose
+<h5>Dashboard Dynamic</h5>
+<ul>
+    <li>The Dashboard should allow users to check historical data by offering them the flexibility to select any desired year.</li>
+    <li>Provide users with the ability to navigate between the dashboards easily.</li>
+    <li>Make the charts and graphs interactive, enabling users to filter data using the charts.</li>
+</ul>
 
-The customer dashboard aims to provide an overview of customer data, trends and behaviors. It will help marketing teams and management to understand customer segments and improve customer satisfaction.
+<h5>Data Filters</h5>
+<p>Allow users to filter data by product information like category and subcategory and by location information like region, state and city.</p>
 
-#### Key Requirements
-
-##### KPI Overview
-
-Display a summary of total number of customers , total sales per customer and total number of orders for the current year and the previous year.
-
-##### Customer Trends
-
- – Present the data for each KPI on a monthly basis for both the current year and the previous year.
-
- – Identify months with highest and lowest sales and make them easy to recognize.
-
-##### Customer Distribution by Number of Orders
-
-Represent the distribution of customers based on the number of orders they have placed to provide insights into customer behavior, loyalty and engagement.
-
-##### Top 10 Customers By Profit
-
- – Present the top 10 customers who have generated the highest profits for the company.
-
- – Show additional information like rank, number of orders, current sales, current profit and the last order date.
-
-### Design & Interactivity Requirements
-
-##### Dashboard Dynamic
-
- – The Dashboard should allow users to check historical data by offering them the flexibility to select any desired year.
-
- – Provide users with the ability to navigate between the dashboards easily.
-
- – Make the charts and graphs interactive, enabling users to filter data using the charts.
-
-##### Data Filters
-
-Allow users to filter data by product information like category and subcategory and by location information like region, state and city.
-
+</details>
 
 
 
