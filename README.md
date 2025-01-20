@@ -38,7 +38,9 @@
 ## **Project Overview**
 
 This user story outlines the specifications for building two dashboards using tableau to help stakeholders, including sales managers and executives to analyze sales performance and customers.
+## **Objective**
 
+  Learn Dashboard Design process in Tableau by using specific framework. **This project was only created for design purpose not for presenting project**
   
 ## **User Requirements**
 
@@ -116,9 +118,7 @@ Represent the distribution of customers based on the number of orders they have 
 
 Allow users to filter data by product information like category and subcategory and by location information like region, state and city.
 
-## **Objective**
 
-  Learn Dashboard Design process in Tableau by using specific framework. 
 
 
   
@@ -127,6 +127,9 @@ Allow users to filter data by product information like category and subcategory 
 
 
 ![image](/images/20250120121612.png)
+
+## Framework for this project
+
 1. STEP 1 - Analyse Requirements
 	- Collect Requirements
 	- Choose Right Chart
@@ -160,6 +163,8 @@ Allow users to filter data by product information like category and subcategory 
 	- Add Icons
 
 ### STEP 1 - Analyze Requirements
+
+My approach and notes:
 
 <details>
 <summary><h4>Collect Requirements</h4></summary>
@@ -198,6 +203,8 @@ KPI Overview
 
 ### STEP 2 - Build Data Source
 
+My approach and notes:
+
 <details>
 <summary><h4>Connect Data</h4></summary>
 <p>Opened new file and connect text file .csv</p>
@@ -226,6 +233,8 @@ KPI Overview
 </details>
 
 ### STEP 3 - Build Charts
+
+My approach and notes:
 
 <details>
 <summary><h4>Create Calculated Fields & Test Them</h4></summary>
@@ -362,6 +371,7 @@ END
 
 ### STEP 4 - Build Dashboard
 
+My approach and notes:
 
 <details>
 <summary><h4>Create Container Structure</h4></summary>
@@ -400,7 +410,6 @@ END
 </details>
 
 ## **Final Dashboard Design**
-[Tableau Public link](https://haproxy-traffic-splitter/views/PortfolioProject1_17373657626930/SalesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 [Tableau Public link](https://public.tableau.com/app/profile/miroslav.kopac/viz/PortfolioProject1_17373657626930/SalesDashboard)
 
@@ -412,3 +421,5 @@ END
 
   
 ## **What I learned**
+
+- Framework which i can apply for 
