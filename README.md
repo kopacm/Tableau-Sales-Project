@@ -30,7 +30,7 @@
         - [Format](#format)
         - [Filter](#filter)
 - [Final Dashboard Design](#final-dashboard-design)
-- [What I learned](#what-i-learned)
+- [What have I learned](#what-have-i-learned)
 
 
   
@@ -419,7 +419,7 @@ My approach and notes:
 ![image](/images/20250120124400.png)
 
   
-## **What I learned**
+## **What have I learned**
 
 - Framework which I can apply for next project I will do in Tableau
 - Choose Charts and Draw Mockups before even starting with visualization
