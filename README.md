@@ -40,7 +40,7 @@
 This user story outlines the specifications for building two dashboards using tableau to help stakeholders, including sales managers and executives to analyze sales performance and customers.
 ## **Objective**
 
-Learn Dashboard Design process in Tableau by using specific framework. **_This project was only created for design purpose not for presenting project_**
+__Learn Dashboard Design process in Tableau by using specific framework. **_This project was only created for design purpose not for presenting project_**__
   
 ## **User Requirements**
 
@@ -52,7 +52,7 @@ The purpose of sales dashboard is to present an overview of the sales metrics an
 
 #### Key Requirements
 
-<details><h4>Key Requirements</h4>
+<details>
 <summary><h4>Sales Dashboard | Requirements</h4></summary>
 
 <h5>KPI Overview</h5>
