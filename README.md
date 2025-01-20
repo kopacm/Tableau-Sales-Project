@@ -184,7 +184,7 @@ Always start with the FACT table to build the data model
 FACT table is table where are ID, dates, measures in my case is it orders.csv 
 rest are dimensions 
 
-![[Pasted image 20250114144836.png]]
+![image](/images/20250114144836.png)
 I need to make sure that connection are right in this case Order and Products tables are connected with Product ID 
 
 
@@ -208,9 +208,9 @@ Understanding the data is important to understand the business and build correct
 - The Dashboard should allow users to check historical data by offering them the flexibility to select any desired year
 Sales for year 2023:
  New created field CY Sales: 
-![[Pasted image 20250114151226.png]]
+![image](/images/20250114151226.png)
 PY Sales
-![[Pasted image 20250114151330.png]]
+![image](/images/20250114151330.png)
 For dynamic purpose I can use parameters in Tableau in order to be able to use it I needed to have years of order years in field which I named Order date (Year) 
 ![[Pasted image 20250114151138.png]]
 Created parameter "Select Year" 
