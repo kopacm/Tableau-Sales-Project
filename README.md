@@ -1,7 +1,7 @@
 # Tableau-Sales-Project
  
 
-![tableau](/images/Tableau.png){: width="600" height="400"}
+![tableau](/images/Tableau.png)
 
   
 ## 📚 Table of Contents
