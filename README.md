@@ -24,8 +24,8 @@ Building two dashboards based on given specifications using tableau to help stak
 ## **Objective**
 
 Learn Dashboard Design process in Tableau by using specific framework. 
-$${\color{orange}This \space project \space was \space only \space created \space for \space design \space purpose \space not \space for \space presenting \space project}$$
-<code style="color : lightskyblue">**This project was only created for purpose of designing dashboard not for presenting finding**</code> 
+$${\color{orange}This \space project \space was \space only \space created \space for \space design \space purpose \space not \space for \space presenting \space findings}$$
+
 
 ## **User Requirements**
 
